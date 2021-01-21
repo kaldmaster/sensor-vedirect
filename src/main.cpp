@@ -20,7 +20,7 @@ ReactESP app([]() {
     sensesp_app = new SensESPApp();
     
     SoftwareSerial *serial = new SoftwareSerial(D7, D8);
-    serial->begin(4800);
+    serial->begin(19200);
 
     VeDirectConnector *veDirectConnector = new VeDirectConnector(serial);
 
